@@ -1,0 +1,2370 @@
+@font-face {
+	font-family: 'Atkinson';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('atkinson.woff2') format('woff2'),
+		url('atkinson.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*.Atkinson*/
+.Atkinson {
+	font-family: 'Atkinson'
+		/*, cursive*/
+	;
+}
+
+@font-face {
+	font-family: 'Infantil';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('boo.woff2') format('woff2'),
+		url('boo.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*.Infantil*/
+.Infantil {
+	font-family: 'Infantil'
+		/*, cursive*/
+	;
+	font-size: 1.15em/2;
+}
+
+
+@font-face {
+	font-family: 'OpenDyslexic';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('OpenDyslexic.woff2') format('woff2'),
+		url('OpenDyslexic.woff2') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*.openDyslexic*/
+.OpenDyslexic {
+	font-family: 'OpenDyslexic'
+		/*, cursive*/
+	;
+	font-size: 1.15em/2;
+}
+
+.Arial {
+	font-family: Arial;
+}
+
+html,
+body {
+	min-height: 100%
+}
+
+html {
+	padding: 0
+}
+
+body {
+	font: 1.25em/1.4 "Atkinson", Arial, Helvetica, sans-serif;
+	padding: 20px;
+	margin: 0;
+	text-align: left;
+	color: #444;
+	background: #fff
+}
+
+input,
+select,
+textarea,
+.feedback {
+	font-family: "Atkinson", ​Arial, Helvetica, sans-serif;
+	font-size: 1em
+}
+
+.pre-code,
+.highlighted-code {
+	font-family: "Atkinson", ​Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	border-radius: 0
+}
+
+a {
+	color: #257E0E
+}
+
+/* Header is also in single page */
+header#header #headerContent h1 {
+	color: #CC1155A1;
+	border: none;
+	margin-right: 75px
+}
+
+#header h1 {
+	margin: 0;
+	font-size: 1em;
+	color: #00843D
+}
+
+#emptyHeader,
+#nodeDecoration {
+	height: auto;
+	font-size: 1em;
+	text-align: left;
+	padding: 16px 25px 16px 10px;
+	border-bottom: 3px solid #00843D;
+	margin-bottom: 0;
+	background: url(_escolares_logo.png) no-repeat 100% 50%
+}
+
+#header {
+	height: auto;
+	font-size: 1em;
+	text-align: left;
+	padding: 16px 25px 16px 0px;
+	border: none;
+	margin-bottom: 0;
+	background: url(_escolares_logo.png) no-repeat 100% 50%
+}
+
+.exe-single-page #header {
+	font-size: 1.55em
+}
+
+#nodeTitle {
+	font-size: 1.55em;
+	margin: 0;
+	color: #000000;
+	padding-right: 60px
+}
+
+#header h1,
+#nodeTitle {
+	text-shadow: 0 0 8px rgba(255, 255, 255, .6), 0 0 5px rgba(255, 255, 255, .6), 0 0 2px rgba(255, 255, 255, .9)
+}
+
+#exe-node-0 header.nodeDecoration h1.nodeTitle {
+	color: #fff;
+	background-color: #00843d;
+	padding: 5px 5px 5px 15px;
+	margin: 5px 0 0 0 !important;
+	border: none !important
+}
+
+h1#nodeTitle {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+/* Safe long titles in SCORM */
+@media (max-width:420px) {
+	#header {
+		font-size: 21px
+	}
+
+	h1#nodeTitle {
+		line-height: 1.1em;
+		font-size: 21px
+	}
+
+	body .iDeviceTitle {
+		font-size: 20px
+	}
+
+	body .iDevice_header .toggle-idevice {
+		position: absolute;
+		right: 13px;
+		bottom: 48px;
+		margin: 0
+	}
+}
+
+/* .nodeTitle in single page */
+.nodeTitle {
+	padding: 5px 0;
+	border-bottom: 2px solid #ffa052;
+	margin: 5px 5px 5px 0;
+	color: #00843D;
+	font-size: 1.5em;
+	padding-right: 60px
+}
+
+h1 {
+	font-size: 1.5em;
+	color: #444;
+	font-weight: bold
+}
+
+h2 {
+	font-size: 1.4em;
+	color: #444;
+	font-weight: bold
+}
+
+h3 {
+	font-size: 1.35em;
+	color: #444;
+	font-weight: bold
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #444
+}
+
+h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #444
+}
+
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #444
+}
+
+p {
+	margin: 1em 0
+}
+
+ol,
+ul {
+	color: #444
+}
+
+#main {
+	height: auto !important;
+	/*height:300px;*/
+	min-height: 300px;
+	padding-top: 40px;
+}
+
+#main h4 {
+	font-size: 1.2em
+}
+
+#main h5 {
+	font-size: 1.1em
+}
+
+#main h6 {
+	font-size: 1em
+}
+
+.iDevice {
+	margin: 25px 0 1em 0
+}
+
+/* Modals */
+#pp_full_res .pp_title {
+	color: #00843D;
+	margin: 0;
+	padding: 1em 0 1em 0
+}
+
+#pp_full_res .pp_inline p {
+	color: #444;
+	padding: 0
+}
+
+/* SCORM navigation*/
+.previousnext a.previouslink,
+section.previousnext {
+	display: none
+}
+
+/* Tables */
+.exe-table thead tr {
+	background: none
+}
+
+/* Orange iDevices (default) */
+/* iDevice title */
+.iDeviceTitle {
+	font-size: 1.4em;
+	display: inline;
+	font-weight: normal;
+	vertical-align: middle;
+	top: 10px;
+	color: #2E2E2E;
+	font-weight: bold;
+	color: #257E0E
+}
+
+/* iDevice content */
+.iDevice_content {
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: left
+}
+
+.iDevice_inner {
+	padding: 10px 20px 20px 20px;
+	background: #fff;
+	box-shadow: 0px 18px 16px -6px rgba(0, 0, 0, 0.37);
+	border-radius: 0px 0px 12px 12px;
+	border: 0px solid #257E0E;
+	border-top-width: 2px;
+	font-size: 1em;
+}
+
+.iDevice {
+	border: 2px solid #257E0E;
+}
+
+/* iDevice icons */
+.iDevice_header {
+	padding: 5px 0 5px 25px;
+	position: relative;
+	min-height: 60px
+}
+
+.iDevice .iDevice_header.iDevice_header_noIcon {
+	padding: 5px 0 5px 20px;
+	background-image: none
+}
+
+/* Buttons */
+.feedbackbutton,
+.feedback-button input,
+.iDevice_buttons input {
+	text-decoration: none;
+	background-color:
+		/*#0065ab*/
+		#CC1155A1;
+	padding: .3em 1em;
+	color: #fff;
+	transition: background-color 0.4s ease-in-out;
+	display: inline-block;
+	border: none;
+	cursor: pointer
+}
+
+.feedbackbutton:hover,
+.feedback-button input:hover,
+.iDevice_buttons input:hover {
+	background-color:
+		/*#004b80*/
+		#c15;
+}
+
+.emphasis0 .feedbackbutton,
+.emphasis0 .feedback-button input,
+.emphasis0 .iDevice_buttons input {
+	background-color: #CC1155A1
+}
+
+.emphasis0 .feedbackbutton:hover,
+.emphasis0 .feedback-button input:hover,
+.emphasis0 .iDevice_buttons input:hover {
+	background-color: #9D4C0A
+}
+
+.activityIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_exp_actividadN.svg);
+	padding-left: 65px;
+}
+
+.readingIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_exp_leeN.svg);
+	padding-left: 65px;
+}
+
+.GeoGebraIdevice .iDevice .iDevice_header {
+	background-image: url(geogebra_icon.svg);
+	padding-left: 65px;
+}
+
+/* Blue iDevices */
+.UDLcontentIdevice-exp .iDevice_inner {
+	padding: 10px 20px 20px 20px;
+	background: #fff;
+	box-shadow: 0px 18px 16px -6px rgba(0, 0, 0, 0.37);
+	border-radius: 0px 0px 20px 20px;
+	border: 0px solid #0065AB;
+	border-top-width: 2px;
+}
+
+.UDLcontentIdevice-exp .iDeviceTitle {
+	color: #0065AB
+}
+
+.UDLcontentIdevice-exp .iDevice {
+	border: 2px solid #0065AB;
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table,
+.UDLcontentIdevice-exp .exe-table {
+	border-color: #0065ab
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table td,
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table th,
+.UDLcontentIdevice-exp .exe-table td,
+.UDLcontentIdevice-exp .exe-table th {
+	border-color: #0065ab
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-table thead,
+.UDLcontentIdevice-exp .exe-table thead {
+	background: #005088;
+	color: #FFF
+}
+
+
+/* Green iDevices */
+.UDLcontentIdevice-eng .iDeviceTitle {
+	color: #499113
+}
+
+.UDLcontentIdevice-eng .iDevice {
+	border: 2px solid #499113;
+}
+
+.UDLcontentIdevice-eng .iDevice_inner {
+	border-color: #499113
+}
+
+.objectivesIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_eng_objetivosN.svg);
+	padding-left: 65px;
+}
+
+.download-packageIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_eng_descargaN.svg);
+	padding-left: 65px;
+}
+
+.RssIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_eng_rssN.svg);
+	padding-left: 65px;
+}
+
+.RubricIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_eng_rubricaN.svg);
+	padding-left: 65px;
+}
+
+.OrientacionesalumnadofpdIdevice .iDevice .iDevice_header,
+.OrientacionestutoriafpdIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_eng_rubricaN.svg);
+	padding-left: 65px;
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table,
+.UDLcontentIdevice-eng .exe-table {
+	background: #fff;
+	border-color: #549b0d
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table td,
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table th,
+.UDLcontentIdevice-eng .exe-table td,
+.UDLcontentIdevice-eng .exe-table th {
+	border-color: #549b0d
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-table thead,
+.UDLcontentIdevice-eng .exe-table thead {
+	background: #437c0a;
+	color: #FFF
+}
+
+.em_iDevice_udl_eng_like .feedbackbutton,
+.em_iDevice_udl_eng_like .feedback-button input,
+.em_iDevice_udl_eng_like .iDevice_buttons input,
+.UDLcontentIdevice-eng .feedbackbutton,
+.UDLcontentIdevice-eng .feedback-button input,
+.UDLcontentIdevice-eng .iDevice_buttons input {
+	background-color: #499113
+}
+
+.em_iDevice_udl_eng_like .feedbackbutton:hover,
+.em_iDevice_udl_eng_like .feedback-button input:hover,
+.em_iDevice_udl_eng_like .iDevice_buttons input:hover,
+.UDLcontentIdevice-eng .feedbackbutton:hover,
+.UDLcontentIdevice-eng .feedback-button input:hover,
+.UDLcontentIdevice-eng .iDevice_buttons input:hover {
+	background-color: #366c0e
+}
+
+
+/* Purple iDevices */
+.UDLcontentIdevice-rep .iDeviceTitle {
+	color: #A25AC4
+}
+
+.UDLcontentIdevice-rep .iDevice {
+	border: 2px solid #A25AC4;
+}
+
+.UDLcontentIdevice-rep .iDevice_inner {
+	border-color: #A25AC4
+}
+
+.GalleryIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_galeriaN.svg);
+	padding-left: 65px;
+}
+
+.FileAttachIdeviceInc .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_adjuntoN.svg);
+	padding-left: 65px;
+}
+
+.CasopracticofpdIdevice .iDevice .iDevice_header,
+.CasestudyIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_casoN.svg);
+	padding-left: 65px;
+}
+
+.CitasparapensarfpdIdevice .iDevice .iDevice_header,
+.ReflectionfpdIdevice .iDevice .iDevice_header,
+.ReflectionfpdmodifIdevice .iDevice .iDevice_header,
+.ReflectionIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_reflexionN.svg);
+	padding-left: 65px;
+}
+
+.EjercicioresueltofpdIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_ejemploN.svg);
+	padding-left: 65px;
+}
+
+.ParasabermasfpdIdevice .iDevice .iDevice_header,
+.WikipediaIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_informarseN.svg);
+	padding-left: 65px;
+}
+
+.RecomendacionfpdIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_recomiendaN.svg);
+	padding-left: 65px;
+}
+
+.DebesconocerfpdIdevice .iDevice .iDevice_header,
+.preknowledgeIdevice .iDevice .iDevice_header {
+	background-image: url(icon_udl_rep_conocerN.svg);
+	padding-left: 65px;
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table,
+.UDLcontentIdevice-rep .exe-table {
+	background: #fff;
+	border-color: #784aba
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table td,
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table th,
+.UDLcontentIdevice-rep .exe-table td,
+.UDLcontentIdevice-rep .exe-table th {
+	border-color: #784aba
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-table thead,
+.UDLcontentIdevice-rep .exe-table thead {
+	background: #5f3996;
+	color: #FFF
+}
+
+.em_iDevice_udl_rep_like .feedbackbutton,
+.em_iDevice_udl_rep_like .feedback-button input,
+.em_iDevice_udl_rep_like .iDevice_buttons input,
+.UDLcontentIdevice-rep .feedbackbutton,
+.UDLcontentIdevice-rep .feedback-button input,
+.UDLcontentIdevice-rep .iDevice_buttons input {
+	background-color: #a25ac4
+}
+
+.em_iDevice_udl_rep_like .feedbackbutton:hover,
+.em_iDevice_udl_rep_like .feedback-button input:hover,
+.em_iDevice_udl_rep_like .iDevice_buttons input:hover,
+.UDLcontentIdevice-rep .feedbackbutton:hover,
+.UDLcontentIdevice-rep .feedback-button input:hover,
+.UDLcontentIdevice-rep .iDevice_buttons input:hover {
+	background-color: #7d389e
+}
+
+.FileAttachIdeviceInc a {
+	color: #412866
+}
+
+/* Carousel */
+.js .exe-carousel h2 {
+	color: #7c3f06
+}
+
+.fx-carousel-pagination a {
+	background: #ee7f1a;
+	text-decoration: none !important;
+	color: #7c3f06;
+	font-weight: bold
+}
+
+.fx-carousel-pagination a:hover,
+.fx-carousel-pagination a:focus {
+	text-decoration: none;
+	color: #444
+}
+
+.fx-carousel-pagination .fx-current a {
+	background: #73D413;
+	color: #444;
+	text-decoration: none
+}
+
+.fx-carousel-content {
+	display: none;
+	background: #fff;
+	padding: 1px 15px .5em 15px;
+	border-radius: 5px;
+	margin: 0 65px;
+	border: 1px solid #444
+}
+
+/* Pagination */
+.emphasis1 .exe-fx .fx-C2 a {
+	background: none;
+}
+
+.js .exe-paginated h2 {
+	color: #7c3f06
+}
+
+.js .fx-pagination a {
+	background: #CC1155A1;
+	text-decoration: none !important;
+	color: #444 !important;
+}
+
+.fx-pagination a:hover,
+.fx-pagination a:focus {
+	color: #444
+}
+
+.js .fx-pagination .fx-current a {
+	background: #98D688;
+	color: #fff;
+	text-decoration: none !important;
+}
+
+.fx-page-content {
+	background: #fff;
+	border: 1px solid #444
+}
+
+/* Accordion */
+.exe-accordion,
+.exe-accordion * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.exe-accordion {
+	width: 90%;
+	margin: 2em 0 2em 5%;
+	border-top: 1px solid #CC1155A1;
+	border-left: 1px solid #CC1155A1;
+	border-right: 2px solid #CC1155A1;
+	border-bottom: 2px solid #CC1155A1
+}
+
+.js .exe-accordion {
+	overflow: hidden;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	background: #f1f1f1;
+	width: 86%;
+	margin: 0px auto
+}
+
+.fx-accordion-title,
+.exe-accordion h2 {
+	width: 100%;
+	padding: 15px;
+	display: inline-block;
+	background-color: #fff;
+	transition: all linear 0.15s;
+	color: #444
+}
+
+a.fx-accordion-title h2:before {
+	content: '\276f';
+	font-size: 1em;
+	/*background-color:#CC1155A1;*/
+	color: white;
+	transition: transform .5s ease-in;
+	position: relative;
+	left: -22px;
+	transform: rotate(90deg);
+	display: inline-block;
+}
+
+a.fx-accordion-title h2.rotate90:before {
+	transform: rotate(-90deg);
+}
+
+/*a.fx-accordion-title h2:hover:before{content:"\25be";font-size:1em;color:white;transition:transform .5s ease-in;position:relative;left:-25px}   */
+.fx-accordion-title {
+	border-top: 1px solid #CC1155A1 !important
+}
+
+.fx-accordion-title-0 {
+	border-bottom: 1px solid #CC1155A1
+}
+
+#main .exe-accordion h2 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold
+}
+
+.js .exe-accordion h2 {
+	padding: 0;
+	border: 0;
+	display: block;
+	background: none
+}
+
+.js .fx-accordion-title {
+	text-decoration: none;
+	padding: 10px 15px 10px 0px;
+	color: #CC1155A1 !important;
+	background-color: #fff !important
+}
+
+.fx-accordion-title.active,
+.fx-accordion-title:hover {
+	filter: alpha(opacity=90);
+	opacity: .9;
+	text-decoration: none
+}
+
+.fx-accordion-section:last-child .fx-accordion-title {
+	border-left: 30px solid #CC1155A1 !important
+}
+
+.fx-afx-accordion-titleccordion-content {
+	padding: 0 15px;
+	display: none;
+	background-color: #f1f1f1;
+	border-top: 1px solid #CC1155A1
+}
+
+/* Tabs */
+.exe-tabs .fx-tabs a {
+	padding: 20px 15px
+}
+
+.exe-tabs .fx-tabs a:hover,
+.exe-tabs .fx-tabs a:focus {
+	text-decoration: none
+}
+
+.fx-tabs .fx-current a {
+	background: #f3f3f3;
+	border-top: 5px solid #CC1155A1;
+	padding: 15px
+}
+
+.exe-tabs .fx-tabs a:before {
+	/*content:'\229C';*/
+	padding-right: 10px
+}
+
+.exe-tabs .fx-tab-content {
+	background: #f3f3f3;
+	padding: 15px;
+	border-top: 5px solid #CC1155A1;
+	position: relative;
+	z-index: 99;
+	bottom: 10px
+}
+
+.exe-tabs .fx-default-panel {
+	border-top-left-radius: 0
+}
+
+.exe-tabs .fx-tabs .fx-current a {
+	background: #98D688;
+	border-top: 5px solid #257E0E;
+	padding: 15px;
+	color: #000000
+}
+
+.iDevice_content .exe-tabs .fx-tab-content {
+	background: #f3f3f3;
+	border-top: 5px solid #257E0E;
+	padding: 15px;
+	color: #444;
+	border-left: 2px solid #257E0E;
+	border-right: 2px solid #257E0E;
+	border-bottom: 2px solid #257E0E
+}
+
+.exe-tabs .fx-tabs a,
+.exe-tabs .fx-tabs a:before {
+	color: #257E0E
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs .fx-current a {
+	border-top-color: #549b0d;
+	color: #499113
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs .fx-current a {
+	border-top-color: #784aba;
+	color: #784aba
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs .fx-current a {
+	border-top-color: #0065ab;
+	color: #0065ab
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tab-content {
+	border-top-color: #549b0d;
+	color: #444
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tab-content {
+	border-top-color: #784aba;
+	color: #444
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tab-content {
+	border-top-color: #0065ab;
+	position: relative;
+	z-index: 99;
+	bottom: 10px;
+	color: #444
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs a,
+.iDevice_wrapper[class*='em_iDevice_udl_eng'] .exe-tabs .fx-tabs a:before {
+	color: #499113
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs a,
+.iDevice_wrapper[class*='em_iDevice_udl_rep'] .exe-tabs .fx-tabs a:before {
+	color: #784aba
+}
+
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs a,
+.iDevice_wrapper[class*='em_iDevice_udl_exp'] .exe-tabs .fx-tabs a:before {
+	color: #0065ab
+}
+
+/* Time line */
+div.fx-timeline-container {
+	border-left: 2px solid #872C1A !important
+}
+
+.fx-timeline-major h2 a {
+	background-color: #872C1A !important
+}
+
+.fx-timeline-major h2 a:hover,
+.fx-timeline-major h2 a:focus {
+	background-color: #9C4938 !important
+}
+
+.fx-timeline-minor h3 a {
+	color: #872C1A !important
+}
+
+.fx-timeline-minor h3 a:after {
+	content: "\21D8";
+	margin-left: 10px;
+	color: #872C1A !important
+}
+
+.fx-timeline-minor h3 a.open:after {
+	content: "\21D6";
+	margin-left: 10px;
+	color: #872C1A !important
+}
+
+.fx-timeline-minor h3 a:hover,
+.fx-timeline-minor h3 a:focus {
+	color: #872C1A !important
+}
+
+.fx-timeline-container a.fx-timeline-expand {
+	color: #7c3f06 !important;
+	background: #fff !important;
+	border: 1px solid #7c3f06;
+	font-weight: bold
+}
+
+.fx-timeline-container a.fx-timeline-expand:hover {
+	color: #fff !important;
+	background: #872C1A !important
+}
+
+/* Note */
+.classnote {
+	border: 2px solid #444;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottom-left: 20px;
+	border-bottom-left-radius: 20px;
+	background: #Fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	width: 35.5%;
+	margin-left: 63%
+}
+
+.notetitleex {
+	font: italic bold 14px verdana;
+	cursor: pointer;
+	padding-left: px;
+	padding-bottom: 5px;
+	color: #444;
+	border-bottom: none !important
+}
+
+.exe-download-package-link a {
+	background: #333;
+	color: white
+}
+
+#siteFooter {
+	font-size: .95em;
+	margin: 25px 0
+}
+
+#siteFooter a {
+	color: #DB0B00
+}
+
+.ExternalUrlIdevice iframe {
+	border: none
+}
+
+/* Lightbox */
+.exeImageGallery {
+	width: 100%
+}
+
+#lbOverlay {
+	background-color: #e2e2e2
+}
+
+#lbOuterContainer {
+	border-color: #ddd
+}
+
+/* base.css */
+.block,
+.feedback {
+	padding: 0
+}
+
+li {
+	list-style-position: outside
+}
+
+#wikipedia-content ul li {
+	list-style-image: none;
+	margin-bottom: auto
+}
+
+/* Hide/Show iDevice */
+.toggle-idevice {
+	text-align: right;
+	display: block;
+	margin-right: 13px;
+	line-height: 19px;
+	height: 19px
+}
+
+.iDevice_header .toggle-idevice {
+	position: absolute;
+	right: 13px;
+	bottom: 13px;
+	margin: 0
+}
+
+.toggle-idevice {
+	margin-top: 5px;
+	margin-bottom: 0px
+}
+
+.toggle-idevice a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(_escolares_icons.png) no-repeat 0 -20px;
+}
+
+.toggle-idevice .show-idevice {
+	background-position: 0 0;
+}
+
+.toggle-idevice span {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	height: 0
+}
+
+.toggle-idevice+.iDevice.emphasis0 {
+	margin-top: 0
+}
+
+/* Links */
+.iDevice a,
+#siteFooter a,
+#packageLicense a,
+.toggle-idevice a {
+	text-decoration: underline
+}
+
+.iDevice a:hover,
+#siteFooter a:hover,
+#packageLicense a:hover,
+.toggle-idevice a:hover {
+	text-decoration: none
+}
+
+/* Licenses */
+#packageLicense {
+	text-align: left;
+	font-size: .8em;
+	padding: 0 20px;
+	color: #444;
+	line-height: 1em;
+	margin: 0 0 25px 0;
+	background: #526668;
+	border-top: 1px solid #00843d
+}
+
+#packageLicense p {
+	margin: 20px 0
+}
+
+#packageLicense a {
+	color: #444;
+	text-decoration: underline
+}
+
+#packageLicense.propietary {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	height: 0
+}
+
+#packageLicense.cc {
+	padding: 0 20px 10px 110px;
+	background: transparent url(_escolares_licenses.gif) no-repeat 20px 5px
+}
+
+#packageLicense.cc-by-sa {
+	background-position: 20px -95px
+}
+
+#packageLicense.cc-by-nd {
+	background-position: 20px -195px
+}
+
+#packageLicense.cc-by-nc {
+	background-position: 20px -295px
+}
+
+#packageLicense.cc-by-nc-sa {
+	background-position: 20px -395px
+}
+
+#packageLicense.cc-by-nc-nd {
+	background-position: 20px -495px
+}
+
+#packageLicense.cc-0 {
+	background-position: 20px -595px
+}
+
+/* Hint & Feedback */
+.iDevice_hint_content {
+	border: 1px solid #cec486;
+	background: #ecf0f1
+}
+
+.iDevice_inner .feedback,
+.iDevice_inner .feedback-right,
+.iDevice_inner .feedback-wrong {
+	background: #f2f2f2;
+	border: 1px solid #343333;
+	padding: 0 1em;
+	margin: 1em 0
+}
+
+.iDevice_inner .iDevice_answer-feedback {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0
+}
+
+.TrueFalseIdevice .feedback {
+	margin-top: 1.5em
+}
+
+/* Edition */
+#activeIdevice .js-idevide-icon-preview {
+	max-width: 64px;
+	max-height: 64px
+}
+
+/* iDevice edition buttons */
+.exe-authoring-page .em_iDevice .idevice-edition-buttons {
+	left: 10px;
+	bottom: -18px
+}
+
+/* TinyMCE */
+.EducaAnd_IMP {
+	color: #499113
+}
+
+.EducaAnd_EXP {
+	color: #0065ab
+}
+
+.EducaAnd_COM {
+	color: #784aba
+}
+
+/* Print */
+@media print {
+	#header {
+		padding-top: 0px !important
+	}
+
+	body {
+		text-align: justify !important;
+		color: #000 !important
+	}
+
+	ol,
+	ul {
+		color: #000 !important
+	}
+
+	#header #headerContent h1 {
+		margin-right: 80px !important
+	}
+
+	#exe-node-0 header.nodeDecoration h1.nodeTitle {
+		padding-left: 0
+	}
+
+	header.nodeDecoration h1.nodeTitle {
+		page-break-after: none !important
+	}
+
+	#header {
+		height: auto;
+		font-size: 1em;
+		text-align: left;
+		padding: 0px 25px 16px 0px;
+		border: none;
+		margin-bottom: 0
+	}
+
+	.nodeDecoration {
+		padding-top: 10px
+	}
+
+	#headerContent {
+		min-height: 51px;
+		background: url(_escolares_logo.png) no-repeat 100% 20%;
+		padding-bottom: 15px
+	}
+
+	#nodeDecoration,
+	#emptyHeader {
+		color: #000;
+		text-shadow: none;
+		background: none;
+		border: 2px solid #CC1155A1;
+		padding: 5px 5px 10px 15px;
+		margin-left: 10px
+	}
+
+	#nodeDecoration,
+	#header,
+	#emptyHeader {
+		color: #000;
+		text-shadow: none;
+		background: none;
+		border: none;
+		padding: 20px 0
+	}
+
+	#packageLicense {
+		text-align: left;
+		font-size: .8em;
+		padding: 0 20px;
+		color: #444;
+		line-height: 1em;
+		margin: 0 0 25px 0;
+		background: #fff;
+		border-top: 1px solid #00843d
+	}
+
+	#packageLicense p {
+		margin: 20px 0
+	}
+
+	#packageLicense a {
+		color: #444;
+		text-decoration: underline
+	}
+
+	#packageLicense.propietary {
+		position: absolute;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		height: 0
+	}
+
+	#packageLicense.cc {
+		padding: 0 20px 0px 110px;
+		background: transparent url(_escolares_licenses.gif) no-repeat 20px 5px
+	}
+
+	#packageLicense.cc-by-sa {
+		background-position: 20px -95px
+	}
+
+	#packageLicense.cc-by-nd {
+		background-position: 20px -195px
+	}
+
+	#packageLicense.cc-by-nc-sa {
+		background-position: 20px -295px
+	}
+
+	#packageLicense.cc-by-nc-nd {
+		background-position: 20px -395px
+	}
+
+	#packageLicense.cc-0 {
+		background-position: 20px -495px
+	}
+
+	#packageLicense,
+	#packageLicense a,
+	#nodeTitle {
+		color: #000
+	}
+
+	.iDevice_header {
+		padding: 5px 0 !important;
+		background: none !important
+	}
+
+	.iDevice_header h2 {
+		padding-left: 0px
+	}
+
+	.nodeTitle {
+		color: #ffa052
+	}
+
+	.iDevice_inner .feedback {
+		background: #fff !important
+	}
+
+	.feedbackbutton,
+	.feedback-button input,
+	.iDevice_buttons input,
+	ul.fx-tabs {
+		display: none !important
+	}
+
+	a {
+		font-weight: bolder;
+		text-decoration: none !important
+	}
+
+	a[href^=http]:after {
+		content: " <" attr(href) "> "
+	}
+
+	.emphasis0:has(>.iDevice_content>.exe-text>p>.external-iframe-src) {
+		margin: 0px !important
+	}
+
+	iframe.external-iframe {
+		display: none
+	}
+
+	/* No iframe content */
+	.external-iframe-src {
+		display: block !important;
+		font-size: .70em;
+		text-align: left;
+		padding: 5px 10px 10px 50px;
+		text-align: center
+	}
+
+	.external-iframe-src a:after {
+		content: ""
+	}
+
+	.exe-dialog-text {
+		display: block !important
+	}
+
+	.fx-accordion-content,
+	.fx-timeline-event {
+		display: block !important
+	}
+
+	.exe-accordion {
+		width: 100% !important;
+		background-color: #fff !important
+	}
+
+	.fx-accordion-section:last-child .fx-accordion-title {
+		padding-left: 10px !important
+	}
+
+	.exe-accordion {
+		border: 1px solid #fff !important
+	}
+
+	.fx-accordion-title {
+		border-top: 1px solid #fff !important
+	}
+
+	body .fx-accordion-title,
+	.exe-accordion h2 {
+		font-size: 1em
+	}
+
+	.fx-accordion-content {
+		padding: 15px 15px 10px 0px
+	}
+
+	.container-wrapper-genially {
+		max-height: 800px !important
+	}
+
+	h2.pp_title {
+		color: #00843d
+	}
+
+	a.fx-accordion-title h2:before,
+	a.fx-accordion-title h2:hover {
+		content: none !important
+	}
+
+	.fx-accordion-title-0 {
+		border-bottom: 1px solid #fff !important
+	}
+
+	.exe-paginated .fx-pagination,
+	.fx-carousel-pagination .fx-carousel-next,
+	.fx-carousel-pagination .fx-carousel-prev,
+	.fx-carousel-pagination {
+		display: none
+	}
+
+	.fx-page-content {
+		border: none;
+		margin: 0px auto;
+		padding: 5px
+	}
+
+	.exe-paginated h2,
+	.fx-tab-content h2 {
+		margin-top: -30px !important;
+		margin-bottom: 0px;
+		color: #872C1A
+	}
+
+	.js .exe-carousel {
+		margin-top: 30px
+	}
+
+	.fx-carousel-content {
+		border: none;
+		display: inline;
+		margin-left: -1.2em;
+		margin-right: 0px;
+		padding-top: 20px
+	}
+
+	.js .exe-carousel h2 {
+		margin-top: -1.5em
+	}
+
+	.exe-tabs .fx-tab-content {
+		display: none;
+		background: #fff;
+		padding: 15px;
+		border-top: none !important;
+		position: relative;
+		z-index: 99;
+		bottom: 10px
+	}
+
+	.js .exe-tabs {
+		background-color: white;
+		width: 100%;
+		border: none
+	}
+
+	div.node,
+	article.node {
+		page-break-after: always
+	}
+
+	.selecciona-IDevice,
+	.candado-IDevice,
+	.desafio-IDevice,
+	.exe-interactive-video,
+	.rosco-IDevice,
+	.quext-IDevice,
+	.adivina-IDevice,
+	.vquext-IDevice,
+	.auto-geogebra {
+		display: none !important
+	}
+
+	.SeleccionaIdevice h1.iDeviceTitle,
+	.desafioIdevice h1.iDeviceTitle,
+	.candadoIdevice h1.iDeviceTitle,
+	.AdivinaIdevice h1.iDeviceTitle,
+	.QuExtIdevice h1.iDeviceTitle,
+	.RoscoIdevice h1.iDeviceTitle,
+	.VideoQuExtIdevice h1.iDeviceTitle,
+	.SeleccionaIdevice h2.iDeviceTitle,
+	.desafioIdevice h2.iDeviceTitle,
+	.candadoIdevice h2.iDeviceTitle,
+	.AdivinaIdevice h2.iDeviceTitle,
+	.QuExtIdevice h2.iDeviceTitle,
+	.RoscoIdevice h2.iDeviceTitle,
+	.VideoQuExtIdevice h2.iDeviceTitle {
+		color: #0065ab;
+		padding-left: 0px !important
+	}
+
+	.SeleccionaIdevice .iDevice_inner,
+	.desafioIdevice .iDevice_inner,
+	.candadoIdevice .iDevice_inner,
+	.AdivinaIdevice .iDevice_inner,
+	.QuExtIdevice .iDevice_inner,
+	.RoscoIdevice .iDevice_inner,
+	.VideoQuExtIdevice .iDevice_inner,
+	.interactive-videoIdevice .iDevice_inner {
+		border: none !important
+	}
+
+	.SeleccionaIdevice:after,
+	.desafioIdevice:after,
+	.candadoIdevice:after,
+	.GeoGebraIdevice:after,
+	.AdivinaIdevice:after,
+	.QuExtIdevice:after,
+	.RoscoIdevice:after,
+	.VideoQuExtIdevice:after,
+	.interactive-videoIdevice:after {
+		content: "—";
+		text-align: center;
+		display: block;
+		margin: 1em 0
+	}
+
+	article.node:last-child {
+		page-break-after: initial
+	}
+
+	.iDevice_solution.feedback h1 {
+		font-size: 12px !important;
+		color: #444
+	}
+
+	.fx-timeline-container a.fx-timeline-expand {
+		display: none
+	}
+
+	.iDevice_destacadofpd {
+		margin-top: 40px;
+		border-top: 1px solid #2E2e2E !important;
+		border-right: none !important;
+		border-left: none !important;
+		border-bottom: 1px solid #2E2e2E !important;
+		box-shadow: none !important;
+		text-align: justify !important
+	}
+
+	.iDevice_inner {
+		margin-top: 5px;
+		padding: 10px 20px 0px 10px;
+		background: #fff;
+		border-top: 1px solid #2E2e2E !important;
+		border-right: none !important;
+		border-left: none !important;
+		border-bottom: 1px solid #2E2e2E !important;
+		box-shadow: none !important;
+		text-align: justify !important;
+		border-radius: 0px !important
+	}
+
+	.hidden-idevice .iDevice_inner {
+		display: block !important
+	}
+
+	.toggle-idevice {
+		display: none
+	}
+
+	.iDevice_content {
+		text-align: justify !important;
+		color: #000
+	}
+
+	.iDevice_inner p,
+	.iDevice_inner ul li,
+	.iDevice_inner ol li {
+		text-align: justify !important
+	}
+
+	.iDeviceTitle {
+		top: 25px !important;
+		display: inline
+	}
+
+	.iDevice {
+		margin: 10px 0 !important
+	}
+
+	.js .exe-paginated h2,
+	.js .exe-carousel h2 {
+		font-size: 1.1em
+	}
+}
+
+
+/* Specific rules and impromevemts for CREA style*/
+.iDevice_header {
+	background-color: #F6F9F5;
+	border-radius: 10px 10px 10px 10px;
+	background-size: 35px;
+	background-position: 15px
+}
+
+.iDevice {
+	box-shadow: 0px 18px 16px -6px rgba(0, 101, 171, 0.37);
+	border-radius: 12px;
+	box-shadow: 0px 18px 16px -6px;
+	background-color: #F6F9F5
+}
+
+.iDevice_header[style*="background-image"] {
+	padding-left: 65px;
+}
+
+.toggle-idevice a {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(_escolares_icons.png) no-repeat 0 -22px;
+	top: 25px;
+	background-size: 22px;
+	right: -50px;
+}
+
+.iDevice_header .toggle-idevice {
+	position: absolute;
+	right: 13px;
+	bottom: 31px;
+	margin: 0
+}
+
+.iDevice.emphasis0 {
+	padding: 20px;
+}
+
+.toggle-idevice+.iDevice.emphasis0 {
+	margin-top: -25px !important;
+	padding: 20px !important;
+}
+
+.toggle-idevice.toggle-em0 {
+	min-height: 36px;
+	position: relative;
+	top: 21px;
+	z-index: 100;
+	margin-left: 10px;
+}
+
+#nodeDecoration {
+	padding: 0 30px 0 0;
+	margin: 0 0 25px 0;
+	border: none;
+	text-shadow: none;
+	background: none;
+	border-bottom: 2px solid #257E0E
+}
+
+#nodeTitle {
+	color: #53A63D;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-right: 2.3em
+}
+
+.iDevice_wrapper[class*='RubricIdevice'] .exe-table {
+	line-height: normal;
+}
+
+.iDevice_wrapper[class*='RubricIdevice'] .exe-table td,
+.iDevice_wrapper[class*='RubricIdevice'] .exe-table th {
+	padding: 0.3em;
+}
+
+.iDevice_wrapper[class*='download-packageIdevice'] .iDevice_inner {
+	font-family: Verdana;
+}
+
+.exe-dl .icon,
+.exe-dl-toggler a {
+	height: 30px;
+}
+
+div.pp_inline div.exe-media-video-box video {
+	height: inherit
+}
+
+.exe-udlContent-alt-bottom .exe-udlContent-content-nav {
+	position: static;
+}
+
+/* Text iDevice without title has text smaller than others */
+article.textIdevice>div.iDevice>div.iDevice_content {
+	font-size: 1.0em;
+}
+
+/* UDL iDevice */
+.js-hidden .exe-udlContent-content-block {
+	border-bottom: solid;
+	border-color: gray;
+}
+
+.exe-udlContent-block-toggler:hover {
+	background-color: #F7F7F7;
+	border-radius: 10px;
+}
+
+.exe-udlContent-alt-bottom .exe-udlContent-content-nav {
+	position: static !important;
+}
+
+:any-link {
+	word-wrap: break-word;
+}
+
+/*Boo font is not well rendered in big screens*/
+@-moz-document url-prefix() {
+	body.Infantil {
+		letter-spacing: 0px;
+	}
+}
+
+/* Cite is shown in the Atkinson font*/
+.styled-qc {
+	font: 1em/2 "Atkinson", Arial, Helvetica, sans-serif;
+	font-style: oblique;
+}
+
+/*TEMP: Task iDevice calc wrong the margin-left and width in the hardcoded HTML*/
+.pbl-task-info dd {
+	text-align: left;
+	padding-left: .5em;
+	float: left;
+	margin: 0 !important;
+}
+
+.pbl-task-info dt {
+	margin: 0;
+	float: left;
+	clear: left;
+}
+
+.pbl-task-info {
+	text-align: left;
+}
+
+/* Larger eXe buttons to edit and delete iDevice */
+a.js-show-icon-panel-button img,
+p.exe-editButtons img,
+p.idevice-edition-buttons img {
+	width: 20px;
+	height: 20px;
+}
+
+#pageAddTextLink,
+p.exe-editButtons select {
+	font-size: 14px !important;
+}
+
+p.exe-editButtons select {
+	margin-top: 5px !important;
+}
+
+/*Change DUA iDevice icon positions*/
+.exe-dl-toggler {
+	display: none;
+}
+
+.exe-udlContent-alt-bottom .exe-udlContent-content-nav {
+	position: static;
+}
+
+/*Quote with closed authorship*/
+.styled-qc::before {
+	top: 0px !important;
+	content: "\00AB  ";
+	font-size: 1.5em;
+	left: 0px;
+	display: inline;
+	position: relative;
+	display: inline-block;
+	line-height: 0px;
+}
+
+.styled-qc p:last-of-type::after {
+	font-size: 1.5em;
+	content: " \00BB";
+	display: inline-block;
+	line-height: 0px;
+}
+
+.styled-qc p::after {
+	display: inline;
+	position: relative;
+	right: 0px;
+	bottom: 0px;
+}
+
+.styled-qc p {
+	margin: 0px;
+}
+
+.styled-qc p:first-child {
+	display: inline;
+}
+
+
+@media all and (max-width:768px) {
+	#nodeDecoration.logocrea h1#nodeTitle {
+		width: calc(100% - 140px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-height: 70px;
+		word-break: break-all;
+		min-height: 60px;
+		display: flex;
+		align-items: center;
+		line-height: 1.1em;
+		font-size: 21px;
+	}
+
+	#nodeDecoration.logocrea #zoomout {
+		right: 110px;
+	}
+
+	#nodeDecoration.logocrea #letraszoom {
+		right: 70px;
+	}
+
+	#nodeDecoration.logocrea #zoomin {
+		right: 40px;
+	}
+
+	#nodeDecoration.logocrea {
+		background: 0;
+		background-color: #FFF;
+	}
+
+	/*blackqoute is not well rendered in small screens*/
+	.styled-qc {
+		margin: 1.5em 0.5em;
+		margin: 0;
+		padding: 0px 10px 0px 50px;
+	}
+
+	.styled-qc::before {
+		top: -35px !important;
+		left: 0px;
+	}
+
+	.styled-qc::after {
+		right: 0px;
+		bottom: 25px;
+	}
+
+	.feedbackbutton,
+	.feedback-button input,
+	.iDevice_buttons input {
+		white-space: break-spaces;
+	}
+
+	/*iDeviceTask show not well dt and dd tags because style is hardcoded in HTML */
+	.pbl-task-info {
+		word-wrap: break-word;
+		margin: 0px 0px 35px 0px;
+		float: left;
+	}
+
+	dd.pbl-task-duration[style],
+	dd.pbl-task-participants[style] {
+		margin-left: 0px !important;
+		clear: left !important;
+		text-align: right !important;
+	}
+
+	dt.pbl-task-duration[style],
+	dt.pbl-task-participants[style] {
+		width: auto !important;
+	}
+}
+
+/* FX effects change*/
+.js .exe-tabs .fx-tabs a {
+	border-right: 1px #257E0E solid !important;
+	border-left: 1px #257E0E solid !important;
+	border-top: 1px #257E0E solid !important;
+	border-bottom: 1px #257E0E solid !important;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: block;
+	padding: 10px 15px;
+	outline: 0;
+	float: left;
+	text-decoration: none;
+}
+
+.js .exe-tabs .fx-tabs .fx-current a {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-decoration: none;
+	padding-top: 6px;
+	border-top: 5px #257E0E solid !important;
+}
+
+.exe-fx h3,
+.exe-fx h4,
+.exe-fx h5 {
+	font-size: 1em !important
+}
+
+@-webkit-keyframes loading {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes loading {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+.rotation {
+	-webkit-animation: loading 0.5s linear infinite;
+	-moz-animation: loading 0.5s linear infinite;
+	transform: rotate(180deg);
+	transition: transform 0.2s ease-in;
+}
+
+.logosoficiales {
+	height: 58px;
+	width: auto;
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
+	/* inline-block is ignored by float:left*/
+}
+
+.iDevice:hover {
+	box-shadow: 2px 18px 18px -10px rgba(19, 41, 0, 0.664);
+}
+
+.iDevice:hover .iDevice_header {
+	background-color: #D0EBC9;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.hidden-idevice .iDevice:hover .iDevice_header {
+	background-color: #D0EBC9;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#nodeDecoration.logocrea {
+	background: url(exe.png) no-repeat;
+	background-position: right 10px top 0px;
+	background-color: #FFF;
+	z-index: 101;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: top 0.3s;
+	margin-left: -15px;
+	background-size: 200px;
+	background-position-y: 5px;
+	left: 25px;
+}
+
+#nodeDecoration.logocrea h1#nodeTitle {
+	width: calc(100% - 330px);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 70px;
+	word-break: break-word;
+}
+
+/*Zoom icons and logos*/
+#speak,
+#translate,
+#typo,
+#highcontrast,
+#access,
+#zoomin,
+#zoomout,
+#letraszoom,
+#reset {
+	display: block;
+	position: absolute;
+	z-index: 101;
+	top: 25px;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	background: url(accesiblity_icons.png) no-repeat 0 0;
+	background-size: 350px;
+}
+
+#speak:hover,
+#translate:hover,
+#typo:hover,
+#highcontrast:hover,
+#access:hover,
+#zoomin:hover,
+#zoomout:hover,
+#letraszoom:hover,
+#reset:hover {
+	cursor: pointer;
+}
+
+#letraszoom {
+	right: 319px;
+	background-position: 0 0;
+	background-size: 34px;
+	width: 34px;
+	top: 22px
+}
+
+#zoominspan,
+#zoomoutspan {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	height: 0;
+}
+
+#logoexe {
+	padding: 0;
+	margin: 0;
+}
+
+/*New accesibility icons*/
+#nodeDecoration.logocrea #access {
+	right: 335px;
+	background-position: 0;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #highcontrast {
+	right: 270px;
+	background-position: -64px;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #typo {
+	right: 230px;
+	background-position: -97px;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #zoomout {
+	right: 190px;
+	background-position: -129px;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #zoomin {
+	right: 150px;
+	background-position: -160px;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #speak {
+	right: 110px;
+	background-position: -192px;
+	top: 15px;
+}
+
+#nodeDecoration.logocrea #reset {
+	right: 70px;
+	background-position: -311px;
+	top: 15px;
+}
+
+/*darkmode*/
+.darkmode {
+	color: #fff !important;
+	background-color: #000 !important;
+	border-color: #FFF;
+}
+
+.darkmode h1#nodeTitle {
+	border-bottom-color: #FFF !important;
+	text-shadow: none !important;
+}
+
+.darkmode_icons {
+	background-image: url(accesiblity_iconsDM.png) !important;
+}
+
+.darkmode_back {
+	background: white !important;
+	background-image: none !important;
+	background-color: #000 !important;
+	background: black !important;
+	border-bottom-color: #FFF !important;
+}
+
+.darkmode_gray {
+	background-color: #333 !important;
+}
+
+.darkmode_icons_nav {
+	background-image: url(_escolares_nav_iconsDM.png) !important;
+}
+
+.darkmode_icons_idevice {
+	background-image: url(_escolares_iconsDM.png) !important;
+}
+
+.darkmode_icons_udl {
+	background-image: url(udl-iconsDM.png) !important;
+}
+
+.ocultar {
+	display: none !important;
+	left: 280px;
+	transition: all .5s ease-in-out;
+}
+
+body.exe-web-site,
+body.exe-scorm {
+	visibility: hidden;
+}
+
+.darkmode .exe-tabs .fx-tabs a.darkmode {
+	background: rgb(38, 38, 38) !important;
+	border-right: 1px #ffffff solid !important;
+	border-left: 1px #ffffff solid !important;
+	border-top: 1px #ffffff solid !important;
+	border-bottom: 1px #ffffff solid !important;
+}
+
+.darkmode .exe-tabs .fx-tabs a::before {
+	color: #fff !important
+}
+
+.darkmode .exe-tabs .fx-tabs .fx-current a,
+.darkmode .exe-tabs .fx-tabs .fx-current a::before {
+	background-color: rgb(255, 255, 255) !important;
+	color: #000 !important;
+	border-top: 5px #ffffff solid !important;
+}
+
+.darkmode .iDevice_content .exe-tabs .fx-tab-content {
+	border-top: 5px solid #ffffff;
+	background: rgba(38, 38, 38) !important;
+}
+
+.darkmode .iDevice_content .exe-tabs .fx-tab-content * {
+	background: rgb(38, 38, 38) !important;
+}
+
+.darkmode .exe-table.darkmode th,
+.darkmode .exe-table.darkmode td {
+	border-color: #ffffff !important;
+}
+
+.darkmode .iDevice:hover {
+	box-shadow: 7px 7px 15px -5px rgb(255, 255, 255);
+}
+
+.darkmode .iDevice {
+	box-shadow: none;
+}
+
+.darkmode .iDevice .iDevice_header {
+	filter: grayscale(100%);
+}
+
+.darkmode .iDevice_header.darkmode h1.iDeviceTitle {
+	filter: none !important;
+}
+
+.darkmode .iDevice:hover .iDevice_header.darkmode {
+	filter: invert(100%) grayscale(100%);
+}
+
+.darkmode dt.darkmode a.exe-dd-toggler.darkmode span.icon.darkmode {
+	background-color: #FFF !important;
+	color: black !important;
+}
+
+/*en rojo queda precioso*/
+.darkmode .exe-udlContent .exe-udlContent-block-toggler a.udl-btn {
+	filter: invert(100%);
+}
+
+.darkmode .fx-accordion-section:last-child .fx-accordion-title {
+	border-left: 30px solid #fff !important;
+}
+
+.darkmode .feedbackbutton,
+.darkmode .feedback-button input,
+.darkmode .iDevice_buttons input {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.darkmode .iDevice_inner .feedback,
+.darkmode .iDevice_inner .feedback-right,
+.darkmode .iDevice_inner .feedback-wrong {
+	filter: invert(100%);
+}
+
+.darkmode .fx-accordion-title h2::before {
+	background-color: #FFF !important;
+	color: #000;
+}
+
+.darkmode .fx-accordion-title h2:hover::before {
+	background-color: #FFF !important;
+	color: #000;
+	content: "\25be";
+}
+
+/* Tipography*/
+.typobox {
+	position: absolute;
+	background-color: #fff;
+	top: 70px;
+	left: 405px;
+	margin-top: 5px;
+	padding: 10px;
+	border: 2px solid #00843D;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.30);
+}
+
+.typobox a {
+	display: block;
+	color: #000;
+}
+
+#nodeDecoration.logocrea .typobox {
+	right: 140px;
+	left: initial;
+}
+
+.darkmode .typobox {
+	border: 2px solid #ffffff;
+	box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.42);
+}
+
+body.Infantil .styled-qc,
+body.Infantil input,
+body.Infantil select,
+body.Infantil textarea,
+body.Infantil .feedback,
+body.Infantil .pre-code,
+body.Infantil .highlighted-code,
+body.Infantil .styled-qc p {
+	font-family: 'Infantil' !important;
+}
+
+body.OpenDyslexic .styled-qc,
+body.OpenDyslexic input,
+body.OpenDyslexic select,
+body.OpenDyslexic textarea,
+body.OpenDyslexic .feedback,
+body.OpenDyslexic .pre-code,
+body.OpenDyslexic .highlighted-code {
+	font-family: 'OpenDyslexic' !important;
+}
+
+body.Arial .styled-qc,
+body.Arial input,
+body.Arial select,
+body.Arial textarea,
+body.Arial .feedback,
+body.Arial .pre-code,
+body.Arial .highlighted-code {
+	font-family: Arial !important;
+}
+
+body .typobox a#Atkinson {
+	font-family: 'Atkinson' !important;
+}
+
+body .typobox a#Arial {
+	font-family: Arial !important;
+}
+
+body .typobox a#Infantil {
+	font-family: 'Infantil' !important;
+}
+
+body .typobox a#OpenDyslexic {
+	font-family: 'OpenDyslexic' !important;
+}
+
+.exe-scorm #main,
+.exe-authoring-page #main {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* darkmode or lightmode filter: invert(100%) hue-rotate(179deg) contrast(200%);*/
+/* other improvements and fixes for CREA */
+.ClozeIdevice .iDevice_buttons input {
+	margin-right: 0.3em;
+}
+
+figcaption.figcaption {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.js .exe-paginated h2,
+.js .exe-carousel h2 {
+	background-color: #F6F9F5;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin: 15px -5px;
+}
+
+.exe-udlContent-alt-bottom .exe-udlContent-block-with-alt {
+	padding-bottom: 20px !important;
+}
+
+/* Definition list chevron */
+.exe-dd-chevron.icon {
+	transform: rotate(90deg);
+	transition: transform 0.2s ease-in;
+	font-size: 1.5em;
+}
+
+.exe-dd-chevron.icon.exe-dd-chevron-open {
+	transform: rotate(-90deg);
+}
+
+/* when an iDevice title starts with // has not border, background, ...*/
+.iDevice_wrapper.hidebox .iDevice,
+.iDevice_wrapper.hidebox .iDevice:hover {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.iDevice_wrapper.hidebox .iDevice_header,
+.iDevice_wrapper.hidebox p.toggle-idevice {
+	display: none;
+}
+
+.iDevice_wrapper.hidebox .iDevice_inner {
+	box-shadow: none;
+	border: none;
+	background: none;
+}
+
+/*The headerless device has no background*/
+.iDevice:has(:not(head)) {
+	background: none;
+}
+
+/*Games iDevices has not darkmode  */
+div.darkmode div.feedback {
+	color: #fff !important;
+	background-color: #000 !important;
+	border-color: #FFF;
+}
+
+h1.darkmode a {
+	color: #fff !important;
+	background-color: #000 !important;
+	border-color: #FFF;
+}
+
+div.darkmode.MQP-MainContainer,
+div.darkmode.CMPT-MainContainer,
+div.darkmode.gameQP-MainContainer,
+div.darkmode.IDFP-MainContainer,
+div.darkmode.SPP-MainContainer,
+div.darkmode.FLCDSP-MainContainer,
+div.darkmode.trivial-MainContainer,
+div.darkmode.rosco-MainContainer,
+div.darkmode.exe-interactive-video,
+div.darkmode.exe-sortableList,
+div.darkmode.MTHO-MainContainer,
+div.darkmode.MTHP-GameContainer,
+div.darkmode.candado-MainContainer,
+div.darkmode.desafio-MainContainer,
+div.darkmode.CQP-MainContainer,
+div.darkmode.DescubreQP-MainContainer,
+div.darkmode.flip-card,
+div.darkmode.INFMP-MainContainer,
+div.darkmode.gameQEIdeviceForm,
+div.darkmode.CTJP-MainContainer,
+div.darkmode.ODNP-MainContainer,
+div.darkmode.RLCP-MainContainer,
+div.darkmode.SLCMP-MainContainer,
+div.darkmode.VQXTP-MainContainer {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+audio {
+	border: 1px solid #979797;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px 1px rgba(205, 205, 205, 0.64);
+}
